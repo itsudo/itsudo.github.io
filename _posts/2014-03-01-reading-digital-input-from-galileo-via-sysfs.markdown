@@ -5,9 +5,9 @@ date:   2014-03-01 23:45:00
 categories: galileo
 ---
 
-This article is not about Arduino IDE - you need access to your Intel Galileo root console to be able to interact with it's filesystem.
- 
-First, connect your board to the push button as shown on [this diagram](http://arduino.cc/en/Tutorial/DigitalReadSerial) and power it up.
+*This post is not about Arduino IDE - you need access to your Intel Galileo root console to be able to interact with it's filesystem.* 
+
+First, connect your board to the push button as shown on [this diagram](http://arduino.cc/en/Tutorial/DigitalReadSerial) and power the board up.
  
 Linux maps pins on the board to the filesystem under `/sys/class/gpio/`. It is not a straightforward mapping though, so PIN2 doesn't map to gpio2, but aparently to gpio14 and/or gpio32 (see [mappings](https://communities.intel.com/docs/DOC-21920)). Saying that I couldn't make it work, so let's move the input to PIN5 - that unconditionally is gpio17.
 
