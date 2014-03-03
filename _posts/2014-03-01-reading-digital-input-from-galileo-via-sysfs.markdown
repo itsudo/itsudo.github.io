@@ -34,3 +34,5 @@ Now we are ready to read from it via:
 `# cat /sys/class/gpio/gpio17/value`
 
 ... and when you press the button it should read "1", otherwise "0".
+
+Btw. if you are interested in doing the same thing in python see [this](http://www.itsudo.com/galileo/python/2014/03/03/reading-digital-input-from-galileo-with-python.html).
