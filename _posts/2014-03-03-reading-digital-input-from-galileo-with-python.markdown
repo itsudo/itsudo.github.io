@@ -1,12 +1,16 @@
 ---
 layout: post
-title:  "Reading digital input from Intel Galileo with python"
-date:   2014-03-03 23:45:00
-categories: galileo python
+title:  "Driving LED with push button, Intel Galileo and nodejs"
+date:   2014-03-03 18:45:00
+categories: galileo nodejs
 ---
 
-Few days ago [I learned how to interact with gpio via sysfs](http://www.itsudo.com/galileo/2014/03/01/reading-digital-input-from-galileo-via-sysfs.html).
+As there is nodejs on my Intel Galileo, I wanted to see how different it would be to interact with gpios' using javascript [instead of python](http://www.itsudo.com/galileo/python/2014/03/03/reading-digital-input-from-galileo-with-python.html).
 
-Here is the python code to do the same thing programatically
+Here is the diagram
 
-<script src="https://gist.github.com/misza222/9323576.js"></script>
+![LED driven by push button with Arduino]({{ site.url }}/assets/Driving-LED-with-push-button-intel-galileo-and-nodejs.png)
+
+and javascript code
+
+<script src="https://gist.github.com/misza222/9329965.js"></script>
